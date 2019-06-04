@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="gift" class="item">
+            <img src="whitegift.png">
+        </div>
+        <div id="santa" class="item">
+            <img src="santa.png">
+        </div>
+        <div id="bells" class="item">
+            <img src="bells.png">
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+    	var gift = $('<p class="par">A gift!</p>');
+        $("#gift").click(function() {
+        	$(this).append(gift);
+        });
+        var santa = $('<p class="par">Santa Claus!</p>');
+        $("#santa").click(function() {
+        	$(this).append(santa);
+        });
+        var bells = $('<p class="par">The bells are ringing!</p>');
+        $("#bells").click(function() {
+        	$(this).append(bells);
+        });
+    });
+    </script>
+</body>
+
+</html>
